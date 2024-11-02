@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Tienda de bicicletas</title>
+</head>
+<body>
+  
+
+        <header>
+          <div class="menu">
+            
+            <nav>
+                <ul> 
+                  <li><img src="img\logobici.png" width="50" height="50"></li>   
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#Productos">Productos</a></li>
+                  <li><a href="#Servicios">Servicios</a></li>
+                  <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+          </div>
+        </header>
+
+        <section id="Productos" class="container">
+        
+
+            <div class="content">
+                <img src="img/Indumentaria.jpeg" alt="Imagen">
+                <div class="text-overlay">Indumentaria</div>
+            </div>
+
+            <div class="content">
+                <img src="img/bicicleta_grande.jpeg" alt="Imagen">
+                <div class="text-overlay">Bicicletas</div>
+            </div>
+            <div class="content">
+                <img src="img/bici_infantil.jpeg" alt="Imagen">
+                <div class="text-overlay">Bicicletas infantiles</div>
+            </div>
+            <div class="content">
+                <img src="img/Cascos.jpeg" alt="Imagen">
+                <div class="text-overlay">Cascos</div>
+            </div>
+            <div class="content">
+                <img src="img/Repuestos.jpeg" alt="Imagen">
+                <div class="text-overlay">Repuestos</div>
+            </div>
+            <div class="content">
+                <img src="img/Accesorios.jpeg" alt="Imagen">
+                <div class="text-overlay">Accesorios</div>
+            </div>
+          
+        </section>
+        <section id="Servicios">
+            <h2>Servicios</h2>
+            
+        </section>
+
+        <section>
+            <h2>Proveedores</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/5NLtsg2IGHM?si=SvbtSzJS-YXgGcMC" 
+                title="video shimano - vairo" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+              </div>
+        </section>
+
+        <section  id="Contacto">
+            
+            <form
+            action="https://formspree.io/f/mgeqvvnd"
+            method="POST" class="formulario"
+          ><h2>Contacto</h2>
+          <p>Formulario</p>
+            <label>
+              Correo
+              <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+            </label>
+            <label for="telefono">Teléfono:</label>
+                     <input type="text" id="telefono" name="telefono" 
+                     
+                    pattern="\d{10}" 
+                    placeholder="1234567890"
+                    title="Ingresa un número de teléfono de 10 dígitos.">
+            <label>
+              Escribinos tu consulta
+              <textarea name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+            </label>
+            
+            <button type="submit">Enviar</button>
+          </form>
+              
+        </section>
+
+        <footer>
+            <div class="menu">
+                Copyright Bicicleteria  - 2024
+            </div>
+        </footer>
+</body>
+</html>
