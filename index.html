@@ -20,49 +20,13 @@
                   <li><img src="img\logobici.png" width="50" height="50"></li>   
                   <li><a href="#">Inicio</a></li>
                   <li><a href="#Productos">Productos</a></li>
-                  <li><a href="#Servicios">Servicios</a></li>
+                  <li><a href="#Reseñas">Reseñas</a></li>
                   <li><a href="#Contacto">Contacto</a></li>
+                  <li><a href="#Contacto">Ubicación</a></li>
                 </ul>
                 
             </nav>
 
-            <div class="container-icon">
-              <div class="container-cart-icon">
-                
-              
-                <div class="count-products">
-                  <img src="img\icono_carrito.png" width="50" height="50">
-                  <span id="contador-productos">0</span>
-                </div>
-              </div>
-      
-              <div class="container-cart-products hidden-cart">
-                <div class="row-product hidden">
-                  <div class="cart-product">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="icon-close"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </div>
-                </div>
-      
-                <div class="cart-total hidden">
-                  <h3>Total:</h3>
-                  <span class="total-pagar"></span>
-                </div>
-                <p class="cart-empty">Carrito sin productos.</p>
-              </div>
-            </div>
         </header>
 
         <main>
@@ -72,16 +36,19 @@
             
           </div>
         </section>
-        <section id="carrito">
-            <h2>carrito</h2>
+        <section id="carrito" >
+          <div class="carrito">
+          <img src="img\icono_carrito.png" width="50" height="50">
+            <h2>Carrito</h2>
             <ul></ul>
             <p>Total: </p>
-            <input id="btnBorrar" type="button" value="Borrar">
-            <input id="btnPagar" type="button" value="Ir a pagar">
+            <input id="btnBorrar" type="button" class="boton" value="Borrar">
+            <input id="btnPagar" type="button" class="boton" value="Ir a pagar">
             <p id="mensajeCarrito"></p>
+          </div>  
         </section>
 
-        <section id="reseñas"> 
+        <section id="Reseñas"> 
             <h2>Reseñas</h2>
             <div class="contenedorReseñas">
                 
@@ -112,7 +79,7 @@
               </div>
         </section>
 
-        <section>
+        <section id="Proveedores">
             <h2>Proveedores</h2>
             <div class="video-container">
                 <iframe width="560" height="315" 
@@ -128,11 +95,10 @@
 
         <section  id="Contacto">
             
-            <form
+           <form
             action="https://formspree.io/f/mgeqvvnd"
             method="POST" class="formulario"
           ><h2>Contacto</h2>
-          <p>Formulario</p>
             <label>
               Correo
               <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
@@ -148,9 +114,21 @@
               <textarea name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
             </label>
             
-            <button type="submit">Enviar</button>
+            <button type="submit" class="boton">Enviar</button>
           </form>
               
+        </section>
+
+        <section id="Ubicación">
+          <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1559.5557400672149!2d-58.50052311271246!3d-34.667929394821535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sestadio%20rep%C3%BAblica%20de%20mataderos!5e1!3m2!1ses!2sar!4v1735328413343!5m2!1ses!2sar" 
+            width="400" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         </section>
     </main>
         <footer>

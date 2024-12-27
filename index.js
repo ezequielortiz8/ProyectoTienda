@@ -45,7 +45,7 @@ for (let i  = 0; i < collproductos.length; i++){
                     <div class="info-product">
                     <h2>${collproductos[i].nombre}</h2>
                     <p class="price">$${collproductos[i].precio}</p>
-                    <input class="btn-add-cart" type="button" value="Agregar al carrito">
+                    <input class="btnAgregar" type="button" value="Agregar al carrito">
                     </div>
             </div>
     `;
@@ -62,7 +62,7 @@ containerItems.innerHTML = productosHTML;
 
 /// listener de botones
 
-const botonesAgregar = document.querySelectorAll(".btn-add-cart");
+const botonesAgregar = document.querySelectorAll(".btnAgregar");
 console.log(botonesAgregar);
 
 const listaCarrito = document.querySelector("#carrito ul");

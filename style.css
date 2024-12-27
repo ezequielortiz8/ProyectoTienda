@@ -1,4 +1,4 @@
-/* Globales */
+
 *::after,
 *::before,
 *{
@@ -15,21 +15,10 @@ body{
       font-style: normal;
 }
 
-.icon-cart{
-    width: 40px;
-    height: 40px;
-    stroke: #000;
-}
-
-.icon-cart:hover{
-    cursor: pointer;
-}
-
 img{
     max-width: 100%;
 }
 
-/* Header */
 header{
     background: #bd89e7;
     width: 100%;
@@ -42,89 +31,40 @@ header{
     font-style: normal;
 }
 
-.container-icon{
-    position: relative;
-}
-
 .imagen-translucida {
     filter: opacity(50%);
   }
   
   .menu {
-    width: 900px;
-    margin: 0 auto;
+    background-color: #bd89e7; 
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
 
-  nav {
-    float: left;
-  }
-  
-  nav ul li {
-    list-style: none;
-    margin-left: 75px;
-    padding: 12px 0;
-    float: left;
-    position: relative;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #444;
-    font-weight: bold;
-  }
-
-.count-products{
-    position: absolute;
-    top: 30px;
-    right: 0;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+  .menu nav ul {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    gap: 15px;
 }
 
-#contador-productos{
-    font-size: 12px;
+/* Estilo de los enlaces */
+.menu nav ul li a {
+  text-decoration: none; /* Quita subrayado */
+  color: #333; /* Color del texto */
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Esquinas redondeadas */
+  transition: background-color 0.3s ease;
 }
 
-.container-cart-products{
-    position: absolute;
-    top: 50px;
-    right: 0;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    background-color: #7e7a7a;
-    color: #fff;
-    width: 400px;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgba(255, 251, 251, 0.2);
-    border-radius: 10px;
-    
-}
-
-.cart-product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
-}
-
-.info-cart-product{
-    display: flex;
-    justify-content: space-between;
-    flex: 0.8;
-}
-
-.titulo-producto-carrito{
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 20px;
+.menu nav ul li {
+  margin: 5px 10px; /* Margen alrededor de los elementos */
 }
 
 .precio-producto-carrito{
@@ -135,58 +75,17 @@ header{
     margin-left: 10px;
 }
 
-.cantidad-producto-carrito{
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.icon-close{
-    width: 25px;
-    height: 25px;
-}
-
-.icon-close:hover{
-    stroke: red;
-    cursor: pointer;
-}
-
-.cart-total{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
-}
-
-.cart-total h3{
-    font-size: 20px;
-    font-weight: 700;
-}
-
 .total-pagar{
     font-size: 20px;
     font-weight: 900;
 }
 
-.hidden-cart{
-    display: none;
-}
-
-
-
-
-/* Main */
-/*.container-items{
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}*/
 
 .container-items{
     display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan a una nueva fila */
-    gap: 10px; /* Espaciado entre los elementos */
-    justify-content: center; /* Opcional: alinear horizontalmente */
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center; 
 }
 
 
@@ -195,9 +94,10 @@ header{
     border-radius: 10px;
 }
 
-.btn-add-cart button{
+.boton, .btnAgregar {
     font-family: "Quicksand", sans-serif;
     border: none;
+    border-radius: 10px;
     background: none;
     background-color: #bd89e7;
     color: #0f0e0e;
@@ -235,36 +135,12 @@ header{
     gap: 10px;
 }
 
-.price{
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.info-product button{
-    font-family: "Quicksand", sans-serif;
-    border: none;
-    background: none;
-    background-color: #bd89e7;
-    color: #0f0e0e;
-    padding: 15px 10px;
-    cursor: pointer;
-}
-
-
-
-.cart-empty{
-    padding: 20px;
-    text-align: center;
-}
-
 
 .hidden{
     display: none;
 }
 
 
-
-  
   .video-container {
     position: relative;
     width: 100%;
@@ -301,6 +177,7 @@ header{
   .formulario {
     display: flex;
     flex-direction: column;
+    color: hsl(0, 17%, 98%);
     gap: 10px; 
     max-width: 400px; 
     margin: 0 auto; 
@@ -308,6 +185,7 @@ header{
   
   .formulario label {
     font-weight: bold;
+
   }
   
   .formulario input,
@@ -322,9 +200,29 @@ header{
     padding: 50px;
     margin: 20px 0;
   }
+
+  section h2 { 
+    text-align: center;
+    color: hsl(0, 17%, 98%);
+  }
+
   html {
     scroll-behavior: smooth;
   } 
+
+  .carrito {
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
+    color: hsl(0, 17%, 98%);
+    padding: 2rem;
+    align-items: baseline;
+    gap: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(243, 242, 242, 0.2);
+
+  }
   .contenedorReseñas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -355,15 +253,20 @@ header{
     font-weight: 500;
   }
 
+  iframe {
+    display: block; /* Asegura que respete el margin auto */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
   @media (max-width: 768px) {
     .contenedorReseñas {
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
   
   @media (max-width: 480px) {
     .contenedorReseñas {
-      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+      grid-template-columns: 1fr; 
     }
   }
   
