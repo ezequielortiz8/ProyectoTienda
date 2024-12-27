@@ -23,44 +23,93 @@
                   <li><a href="#Servicios">Servicios</a></li>
                   <li><a href="#Contacto">Contacto</a></li>
                 </ul>
+                
             </nav>
-          </div>
+
+            <div class="container-icon">
+              <div class="container-cart-icon">
+                
+              
+                <div class="count-products">
+                  <img src="img\icono_carrito.png" width="50" height="50">
+                  <span id="contador-productos">0</span>
+                </div>
+              </div>
+      
+              <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                  <div class="cart-product">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="icon-close"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </div>
+                </div>
+      
+                <div class="cart-total hidden">
+                  <h3>Total:</h3>
+                  <span class="total-pagar"></span>
+                </div>
+                <p class="cart-empty">Carrito sin productos.</p>
+              </div>
+            </div>
         </header>
 
         <main>
         <section id="Productos" class="container">
         
-
-            <div class="content">
-                <img src="img/Indumentaria.jpeg" alt="Imagen">
-                <div class="text-overlay">Indumentaria</div>
-            </div>
-
-            <div class="content">
-                <img src="img/bicicleta_grande.jpeg" alt="Imagen">
-                <div class="text-overlay">Bicicletas</div>
-            </div>
-            <div class="content">
-                <img src="img/bici_infantil.jpeg" alt="Imagen">
-                <div class="text-overlay">Bicicletas infantiles</div>
-            </div>
-            <div class="content">
-                <img src="img/Cascos.jpeg" alt="Imagen">
-                <div class="text-overlay">Cascos</div>
-            </div>
-            <div class="content">
-                <img src="img/Repuestos.jpeg" alt="Imagen">
-                <div class="text-overlay">Repuestos</div>
-            </div>
-            <div class="content">
-                <img src="img/Accesorios.jpeg" alt="Imagen">
-                <div class="text-overlay">Accesorios</div>
-            </div>
-          
-        </section>
-        <section id="Servicios">
-            <h2>Servicios</h2>
+         <div id="container-items" class="container-items">
             
+          </div>
+        </section>
+        <section id="carrito">
+            <h2>carrito</h2>
+            <ul></ul>
+            <p>Total: </p>
+            <input id="btnBorrar" type="button" value="Borrar">
+            <input id="btnPagar" type="button" value="Ir a pagar">
+            <p id="mensajeCarrito"></p>
+        </section>
+
+        <section id="reseñas"> 
+            <h2>Reseñas</h2>
+            <div class="contenedorReseñas">
+                
+                <div class="card">  
+                    <div class="card__details">
+                      <p>
+                        Excelente atención!
+                      </p>
+                      <h4>- Christian Gomez</h4>
+                    </div>
+                </div>
+                <div class="card">         
+                    <div class="card__details">
+                      <p>
+                        Muy buen servicio.
+                      </p>
+                      <h4>- Laura Perez</h4>
+                    </div>           
+                </div>
+                <div class="card">
+                    <div class="card__details">
+                      <p>
+                        Totalmente recomendable.
+                      </p>
+                      <h4>- Carla Fernandez</h4>
+                    </div>       
+                </div>
+              </div>
         </section>
 
         <section>
@@ -110,5 +159,6 @@
             </div>
         </footer>
         </main>
+        <script src="index.js"></script>
 </body>
 </html>
